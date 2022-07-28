@@ -1,23 +1,14 @@
-# 鸭皇の官网|NC-NutsCity的腐竹
+# 鸭皇の官网
 
-<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
-<script src="https://nutscity.tk/blacked_ip.js"></script>
+## 好玩的东西
 
-<script>
-  ip = returnCitySN.cip;
-  fromurl = document.referrer;
-  console.log(fromurl);
-  if (is_blacked(ip) && (fromurl != "https://link.nutscity.tk/")) {
-    window.open("https://link.nutscity.tk/blacked_ip.html", "_self");
-  }
-</script>
+1. [破解信息课电脑控制](https://github.com/chenmy1903/student)
+2. [TkPy3](https://github.com/chenmy1903/TkPy3)
+3. [某开挂服](https://tzqpixel.tk)
+4. [LunarClient汉化|中文输入修复](https://github.com/chenmy1903/LunarClient)
 
-> 本网站已开启ip黑名单
+## 加速源
 
-## NutsCity-坚果小镇
+> 被工信部墙了, 部分地区连不上
 
-> NC服务器有属于自己的网站啦, [点击前往](https://nutscity.tk)
-
-ip (中国加速): `china.nutscity.tk`
-
-BBS已开启式运行: [点击前往](https://bbs.nutscity.tk)
+1. GitHub加速源: [https://gh.chenmy1903.tk](https://gh.chenmy1903.tk)
