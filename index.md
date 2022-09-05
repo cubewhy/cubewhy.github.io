@@ -6,7 +6,7 @@
 2. [TkPy3](https://github.com/chenmy1903/TkPy3)
 3. 开纪服已停服
 4. [LunarClient-CN](https://github.com/chenmy1903/LunarClient)
-5. [诶哟~嘿~qby材质包](qby-pack)
+5. [诶哟嘿qby材质包](qby-pack)
 
 ## 加速源
 
