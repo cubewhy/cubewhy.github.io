@@ -18,8 +18,8 @@
 
 1. Discord: `chenmy1903#1139`
 2. QQ: `2834886052`
-3. DOMAIN EMALI: "Loser@chenmy1903.tk"
+3. DOMAIN EMALI: `Loser@chenmy1903.tk`
 
 ## 其他的
 
-1. [Xiaotang27](xiaotang27.github.io)
+1. [Xiaotang27](https://xiaotang27.github.io)
