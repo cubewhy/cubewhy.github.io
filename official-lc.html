@@ -3,19 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>获取LC启动器更新</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <script>
+        const base = "https://launcherupdates.lunarclientcdn.com"
+        function sendDownload(name) {
+            window.open(`${base}/${name}`)
+        }
+    </script>
 </head>
 <body>
 <p>我们推荐<a href="https://www.lunarclient.top">Celestial</a>, 它比原版有更好的性能</p>
-<h1>获取LC启动器更新</h1>
+<h1>获取LC启动器更新(Windows)</h1>
+<p>该工具可以让你自己下载Lunar的安装包, 而不是使用垃圾的安装文件进行安装</p>
+<h2>傻瓜式操作</h2>
+<p>最新版本: <label id="latest_version">不知道,可能是API请求超时</label></p>
+<button id="download_exe" onclick="alert('API似乎死了,尝试刷新页面?')">下载原安装包</button><br>
+<hr>
+<button id="download_x64" onclick="alert('API似乎死了,尝试刷新页面?')">下载x86_64</button><br>
+<button id="download_ia32" onclick="alert('API似乎死了,尝试刷新页面?')">下载ia32</button>
+<h2>获取帮助</h2>
+<a href="https://cubewhymc.github.io/docs">帮助文档</a>
+<hr>
 <h2>原YML:</h2>
-<pre id="yml-raw">
-
-</pre>
+<p>Download by using https://launcherupdates.lunarclientcdn.com/fileName</p>
+<pre id="yml-raw"></pre>
 
 <script async>
-    fetch("https://launcherupdates.lunarclientcdn.com/latest.yml?nocache=NMSL").then(r => {
+    fetch(`${base}/latest.yml?nocache=NMSL`).then(r => {
         r.text().then(text => {
+            let parsed = jsyaml.load(text)
+            console.log(parsed)
             document.getElementById("yml-raw").textContent = text
+            document.getElementById("latest_version").textContent = parsed["version"]
+            let exe = parsed["files"]["url"]
+            let x64 = parsed["packages"]["x64"]["file"]
+            let ia32 = parsed["packages"]["ia32"]["file"]
+            document.getElementById("download_x64").onclick = function () {
+                sendDownload(x64)
+            }
+
+            document.getElementById("download_ia32").onclick = function () {
+                sendDownload(ia32)
+            }
+
+            document.getElementById("download_exe").onclick = function () {
+                sendDownload(exe)
+            }
         });
     })
 </script>
