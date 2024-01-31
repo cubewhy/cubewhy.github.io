@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取LC启动器更新</title>
+</head>
+<body>
+<p>我们推荐<a href="https://www.lunarclient.top">Celestial</a>, 它比原版有更好的性能</p>
+<h1>获取LC启动器更新</h1>
+<h2>原YML:</h2>
+<pre id="yml-raw">
+
+</pre>
+
+<script async>
+    fetch("https://launcherupdates.lunarclientcdn.com/latest.yml?nocache=NMSL").then(r => {
+        r.text().then(text => {
+            document.getElementById("yml-raw").textContent = text
+        });
+    })
+</script>
+</body>
+</html>
