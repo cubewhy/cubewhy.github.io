@@ -35,7 +35,7 @@
             console.log(parsed)
             document.getElementById("yml-raw").textContent = text
             document.getElementById("latest_version").textContent = parsed["version"]
-            let exe = parsed["files"]["url"]
+            let exe = parsed["path"]
             let x64 = parsed["packages"]["x64"]["file"]
             let ia32 = parsed["packages"]["ia32"]["file"]
             document.getElementById("download_x64").onclick = function () {
