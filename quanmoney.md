@@ -52,8 +52,6 @@
 
 [天津_仪仗精英 (tjyzjy.com.cn)](http://www.tjyzjy.com.cn/)
 
-[Web archive(部分地区打不开)]()
-
 截图(已将关键词标红):
 
 ![image2](images/website.png)
